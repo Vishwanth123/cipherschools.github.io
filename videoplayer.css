@@ -81,6 +81,12 @@
 }
 /* Styles for Responsiveness on Mediums Devices */
 @media (min-width:576px) and (max-width:991px){
+     .nav2 p{
+        font-size: 0px;
+    }
+    .nav2 i{
+        font-size: 3vw;
+    }
     .player-side{
         width: 100%;
     }
