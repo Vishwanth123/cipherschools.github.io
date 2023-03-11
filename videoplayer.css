@@ -128,6 +128,9 @@
     .nav2 i{
         font-size: 2.5vh;
     }
+    .nav2 p{
+        font-size: 2.5vw;
+    }
     .video-player{
         margin-left: auto;
     }
