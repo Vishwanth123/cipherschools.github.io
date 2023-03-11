@@ -1,0 +1,113 @@
+.nav-item{
+    margin-left: 5px;
+}
+/* Top NavBar styles */
+.nav1{
+    background-color: white;
+    position: absolute; 
+    z-index: 10;
+    position: fixed;
+    width: 100%;   
+    top: 0%;
+}
+.nav1 i{
+    font-size: 1rem;
+}
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+/* Side NavBar Styles */
+.nav2 i{
+    font-size: 1.5vw;
+}
+.nav2 p{
+    font-size: 1vw;
+}
+.nav2{
+    width: 8vw;
+    height: 100vh;
+    position: fixed;
+    margin-left: 0;
+}
+.nav2-list{
+    margin-top: 5rem;
+    list-style: none;
+    width: 8vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 0.5rem;
+
+}
+/* Styles for Videos List */
+.videos-list{
+    margin-top: 3rem;
+    margin-left: 8vw;
+    padding: 2.5%;
+}
+.videos-list p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25vw;
+}
+.video-item{
+    margin-top:1rem;
+}
+.video-item:hover{
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
+    z-index: 9;
+}
+/* Media Queries for Responsiveness for Medium Devices */
+@media ( min-width: 576px ) and (max-width:991px){
+    .nav2 p{
+        font-size: 0px;
+    }
+    .nav2 i{
+        font-size: 3vw;
+    }
+    .videos-list p{
+        font-size: 16px;
+    }
+}
+/* Media Queries for Responsiveness for Small Devices */
+@media (max-width: 575px){
+    .nav2{
+        height: 8vh;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        background-color: white;
+    }
+    .nav2-list{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 8vh;
+        align-items: center;
+        margin-top: auto ;
+        margin-bottom: auto;
+        justify-content: space-evenly;
+    }
+    .videos-list{
+        margin-left: auto;
+    }
+    .video-item:hover{
+        box-shadow: none;
+        transform: none;
+    }
+    .nav2 i{
+        font-size: 2.5vh;
+    }
+    .nav2 p{
+        font-size: 2.5vw;
+    }
+    .videos-list p{
+        font-size: 18px;
+    }
+}
+

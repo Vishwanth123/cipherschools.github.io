@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="videoplayer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c2b4f9a0e.js" crossorigin="anonymous"></script>
+    <title>CipherSchools</title>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="nav1">
+        <nav class="navbar navbar-expand-lg navbar-light shadow">
+          <div class="container-fluid">
+            <a href="home.html" class="navbar-brand ml-auto d-inline"><img src="https://www.cipherschools.com/static/media/Cipherschools_icon@2x.3b571d743ffedc84d039.png" alt="" width="8%"> CipherSchools</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarTogglerDemo02">
+                <form class="d-flex form-inline mx-auto mr-auto  my-2 my-lg-0 ">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" width="100%">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul class="navbar-nav ml-0 mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <div class="d-flex flex-column text-center">
+                          <i class="fa-solid fa-bell"></i>
+                          <span>Notifications</span>
+                        </div>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#">
+                        <div class="d-flex flex-column text-center">
+                          <i class="fa-solid fa-user"></i>
+                          <span>Profile</span>
+                        </div>
+                      </a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+        </nav>
+    </div>
+    <!-- Side Navigation Bar -->
+    <nav class="nav2 shadow p-0">
+        <ul class="nav2-list text-center nav2-font p-0">
+          <li class="home">
+            <a href="home.html" class="text-decoration-none link-dark">
+                <div class="d-flex flex-column ">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="m-0">Home</p>
+                </div>
+            </a>
+          </li>
+          <li class="explore">
+              <a href="#" class="text-decoration-none link-dark">
+                  <div class="d-flex flex-column">
+                      <i class="fa-regular fa-compass"></i>
+                      <p class="m-0">Explore</p>
+                      </div>
+              </a>
+          </li>
+          <li class="subscriptions">
+              <a href="#" class="text-decoration-none link-dark">
+                  <div class="d-flex flex-column">
+                      <i class="fa-regular fa-square-plus"></i>
+                      <p class="m-0">Subscriptions</p>
+                  </div>
+              </a>
+          </li>
+          <li class="library">
+              <a href="#" class="text-decoration-none link-dark">
+                  <div class="d-flex flex-column">
+                      <i class="fa-solid fa-circle-play"></i>
+                      <p class="m-0">Library</p>
+                  </div>
+              </a>
+          </li>
+        </ul>
+      </nav>
+       <!-- Video Player Page -->
+    <div class="video-player">
+        <div class="p-0">
+            <!-- Player Side -->
+            <div class="player-side  p-0" >
+                <video src="videos/video1.mp4" type="video/mp4" controls width="100%" autoplay></video>
+                <div class="video-details p-2">
+                    <p class="video-title m-1">Guide on Video Marketing | Angela Yun</p>
+                        <div class="d-flex align-items-center">
+                            <img src="images/channels4_profile.jpg" alt="" class="rounded-circle" width="5%" >
+                            <div class="d-flex flex-column pl-1">
+                                <p class="m-0">Marketing's Channel</p>
+                                <p class="m-0 ">1M Subscibers</p>
+                            </div>
+                            <div class="d-flex ms-auto">
+                                <button class="btn btn-light border m-1"><i class="fa-solid fa-eye"></i> 60k</button>
+                                <button class="btn btn-light border m-1"><i class="fa-solid fa-thumbs-up"></i> 30k</button>
+                                <button class="btn btn-light border m-1"><i class="fa-solid fa-share"></i> Share</button>
+                            </div>
+                        </div>
+                    <div class="comment-section mt-3">
+                        <h5>Comments</h5>
+                        <div class="comment d-flex align-items-center mt-3">
+                            <img src="images/channels4_profile.jpg" alt="" class="rounded-circle" width="5%" >
+                            <div class="commentor d-flex flex-column pl-1">
+                                <p class="m-0 username">User1</p>
+                                <p class="m-0">Great video! I think a more application centric approach helps a lot </p>
+                                
+                                <a class="btn w-25 p-0 replies" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Check Replies <i class="fa-solid fa-caret-down"></i>
+                                </a>
+                                <div class="collapse pl-1" id="collapseExample">
+                                    <div class="">
+                                        <div class="comment d-flex align-items-center mt-1">
+                                        <img src="images/channels4_profile.jpg" alt="" class="rounded-circle" width="5%">
+                                        <div class="d-flex flex-column">
+                                            <p class="m-0 username">User1</p>
+                                            <p class="m-0">Great video! I think a more application centric approach helps a lot </p>    
+                                        </div>
+                                        </div>
+                                        <div class="comment d-flex align-items-center mt-1">
+                                        <img src="images/channels4_profile.jpg" alt="" class="rounded-circle" width="5%">
+                                        <div class="d-flex flex-column">
+                                            <p class="m-0 username">User1</p>
+                                            <p class="m-0">Great video! I think a more application centric approach helps a lot </p>    
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex ms-auto">
+                                <button class="btn btn-light border  m-1"><i class="fa-solid fa-thumbs-up"></i> </button>
+                                <button class="btn btn-light border m-1" style="transform: scaleX(-1);"><i class="fa-solid fa-thumbs-down"></i></button>
+                                <button class="btn btn-light border m-1"><i class="fa-solid fa-reply"></i> Reply</button>
+                            </div>
+                        </div>
+                        <div class="comment d-flex align-items-center mt-3">
+                            <img src="images/channels4_profile.jpg" alt="" class="rounded-circle" width="5%" >
+                            <div class="commentor d-flex flex-column pl-1">
+                                <p class="m-0 username">User1</p>
+                                <p class="m-0">Great video! I think a more application centric approach helps a lot </p>
+                            </div>
+                            <div class="d-flex ms-auto">
+                                <button class="btn btn-light border  m-1"><i class="fa-solid fa-thumbs-up"></i> </button>
+                                <button class="btn btn-light border m-1" style="transform: scaleX(-1);"><i class="fa-solid fa-thumbs-down"></i></button>
+                                <button class="btn btn-light border m-1"><i class="fa-solid fa-reply"></i> Reply</button>
+                            </div>
+                        </div>
+                        <div class="comment d-flex align-items-center mt-3">
+                            <img src="images/channels4_profile.jpg" alt="" class="rounded-circle" width="5%" >
+                            <div class="commentor d-flex flex-column pl-1">
+                                <p class="m-0 username">User1</p>
+                                <p class="m-0">Great video! I think a more application centric approach helps a lot </p>
+                            </div>
+                            <div class="d-flex ms-auto">
+                                <button class="btn btn-light border  m-1"><i class="fa-solid fa-thumbs-up"></i> </button>
+                                <button class="btn btn-light border m-1" style="transform: scaleX(-1);"><i class="fa-solid fa-thumbs-down"></i></button>
+                                <button class="btn btn-light border m-1"><i class="fa-solid fa-reply"></i> Reply</button>
+                            </div>
+                        </div>
+                        <div class="comment d-flex align-items-center mt-3">
+                            <img src="images/channels4_profile.jpg" alt="" class="rounded-circle" width="5%" >
+                            <div class="commentor d-flex flex-column pl-1">
+                                <p class="m-0 username">User1</p>
+                                <p class="m-0">Great video! I think a more application centric approach helps a lot </p>
+                            </div>
+                            <div class="d-flex ms-auto">
+                                <button class="btn btn-light border  m-1"><i class="fa-solid fa-thumbs-up"></i> </button>
+                                <button class="btn btn-light border m-1" style="transform: scaleX(-1);"><i class="fa-solid fa-thumbs-down"></i></button>
+                                <button class="btn btn-light border m-1"><i class="fa-solid fa-reply"></i> Reply</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Side List for More Videos -->
+        <div class="p-0 mr-0">
+            <div class="sideList">
+                <h3 class="text-center m-0">More Videos</h3>
+                <div class="moreVideosList">
+                    <a href="videoplayer.html" class="video-item link-dark text-decoration-none">
+                        <div class=" rounded card card-body shadow p-0" >
+                            <img src="images/videoResume.png" alt="" class="rounded" width="100%">
+                            <div class="d-flex">
+                                <img src="images/channels4_profile.jpg" alt="" width="13%" height="13%" class="rounded-circle m-2">
+                                <div class="d-flex flex-column">
+                                <p class="mt-2 m-0">Guide on Video Marketing | Angela Yun</p>
+                                <span>Channel Name</span>
+                                <span class="mb-1">x Views • y days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="video-item rounded card card-body shadow p-0" >
+                        <img src="images/videoResume.png" alt="" class="rounded">
+                        <div class="d-flex ">
+                            <img src="images/channels4_profile.jpg" alt="" width="13%" height="13%" class="rounded-circle m-2">
+                            <div class="d-flex flex-column">
+                            <p class="mt-2 m-0">Guide on Video Marketing | Angela Yun</p>
+                            <span>Channel Name</span>
+                            <span class="mb-1">x Views • y days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-item rounded card card-body shadow p-0" >
+                        <img src="images/videoResume.png" alt="" class="rounded">
+                        <div class="d-flex ">
+                            <img src="images/channels4_profile.jpg" alt="" width="13%" height="13%" class="rounded-circle m-2">
+                            <div class="d-flex flex-column">
+                            <p class="mt-2 m-0">Guide on Video Marketing | Angela Yun</p>
+                            <span>Channel Name</span>
+                            <span class="mb-1">x Views • y days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="moreVideosList">
+                    <div class="video-item rounded card card-body shadow p-0" >
+                            <img src="images/marketing.webp" alt="" class="rounded">
+                            <div class="d-flex">
+                                <img src="images/channels4_profile.jpg" alt="" width="13%" height="13%" class="rounded-circle m-2">
+                                <div class="d-flex flex-column">
+                                <p class="mt-2 m-0">Guide on Video Marketing | Angela Yun</p>
+                                <span>Channel Name</span>
+                                <span class="mb-1">x Views • y days ago</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="video-item rounded card card-body shadow p-0" >
+                        <img src="images/marketing.webp" alt="" class="rounded">
+                        <div class="d-flex ">
+                            <img src="images/channels4_profile.jpg" alt="" width="13%" height="13%" class="rounded-circle m-2">
+                            <div class="d-flex flex-column">
+                            <p class="mt-2 m-0">Guide on Video Marketing | Angela Yun</p>
+                            <span>Channel Name</span>
+                            <span class="mb-1">x Views • y days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-item rounded card card-body shadow p-0" >
+                        <img src="images/marketing.webp" alt="" class="rounded">
+                        <div class="d-flex ">
+                            <img src="images/channels4_profile.jpg" alt="" width="13%" height="13%" class="rounded-circle m-2">
+                            <div class="d-flex flex-column">
+                            <p class="mt-2 m-0">Guide on Video Marketing | Angela Yun</p>
+                            <span>Channel Name</span>
+                            <span class="mb-1">x Views • y days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
